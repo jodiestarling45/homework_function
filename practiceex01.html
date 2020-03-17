@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processconfirm(answer){
+        let result='';
+        if (answer){
+            result="start activate kill mode ";
+        }else{
+            result="not avaible conection";
+        }return result
+    }
+    let confirm_answer=confirm("please confirm to this !!!");
+    let theanswer=processconfirm(confirm_answer);
+    console.log(theanswer);
+</script>
+</body>
+</html>

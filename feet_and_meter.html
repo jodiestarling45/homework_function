@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("enter the meter "));
+    function change(number) {
+        let arrayKey=[];
+        for (let i = 0; i < number; i++) {
+            let foot = 3.279 * i;
+            arrayKey.push(foot);
+        }
+        return arrayKey;
+
+    }
+    function change_1(number) {
+        let arrayKey=[];
+        for (let i = 0; i < number; i++) {
+            let meter = 0.305 * i;
+            arrayKey.push(meter);
+        }
+        return arrayKey;
+
+    }
+    console.log("Chuyển đổi từ feet sang meters:"+change(num));
+    console.log("Chuyển đổi từ meters sang feet:"+change_1(num));
+</script>
+</body>
+</html>
